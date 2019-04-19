@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1 id="saludo"></h1>
+        <h1 id="suma">Resultado de la suma es: </h1>
+
+        <script>
+            var saludoId = document.getElementById("saludo");
+            /*function saludar (nombre){
+                return "hola "+nombre;
+            }*/
+
+            var saludar = nombre => 'hola '+nombre;
+            saludoId.innerHTML = saludar('Juan');
+
+            var sumaId = document.getElementById("suma");
+            var sumar = (a, b) => a+b;
+            sumaId.innerHTML += sumar(2,2) ;
+        </script>
+    </body>
+</html>
